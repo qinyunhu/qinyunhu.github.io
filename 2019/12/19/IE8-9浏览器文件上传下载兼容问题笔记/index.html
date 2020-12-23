@@ -144,7 +144,7 @@
         <div class="sidebar-overview">
             <div class="sidebar-avatar">
                 
-                    <img src="https://github.com/qinyunhu/qinyunhu.github.io/blob/master/img/avatar.jpg?raw=true"/>
+                    <img src="/images/龙文章.jpg"/>
                 
             </div>
             <div class="sidebar-author-name">mkdir</div>
@@ -206,7 +206,7 @@
     </span>
     <span>
       <span class="iconfont icon-calendar-check"></span>
-      更新于:&nbsp;2020-12-21
+      更新于:&nbsp;2020-12-23
     </span>
     <span>
       <span class="iconfont icon-folder"></span>
@@ -275,15 +275,12 @@
   
   <div class="mdui-card-content mdui-typo mdui-p-x-4">
     <h4 id="1-IE8-9文件上传"><a href="#1-IE8-9文件上传" class="headerlink" title="1.IE8-9文件上传"></a>1.IE8-9文件上传</h4><ol>
-<li><p>IE8-9使用ajaxSubmit不支持Content-Type: “application/json”，IE遇到不支持的请求头会自动更改</p>
-</li>
-<li><p>IE8-9可以使用form表单上传文件，form表单无法设置请求头</p>
-<a id="more"></a>
-<h4 id="2-IE8-9文件下载"><a href="#2-IE8-9文件下载" class="headerlink" title="2.IE8-9文件下载"></a>2.IE8-9文件下载</h4></li>
-<li><p>IE8-9不支持Blob，可以让后端返回文件路径，使用window.open触发下载</p>
-</li>
-<li><p>IE8-9 window.open 被禁用时，可以采用iframe（注意iframe跨域）</p>
-</li>
+<li>IE8-9使用ajaxSubmit不支持Content-Type: “application/json”，IE遇到不支持的请求头会自动更改</li>
+<li>IE8-9可以使用form表单上传文件，form表单无法设置请求头</li>
+</ol>
+<h4 id="2-IE8-9文件下载"><a href="#2-IE8-9文件下载" class="headerlink" title="2.IE8-9文件下载"></a>2.IE8-9文件下载</h4><ol>
+<li>IE8-9不支持Blob，可以让后端返回文件路径，使用window.open触发下载</li>
+<li>IE8-9 window.open 被禁用时，可以采用iframe（注意iframe跨域）</li>
 </ol>
 
   </div>
@@ -328,8 +325,6 @@
         
           <a href="#comment-tab1" class="mdui-ripple">valine</a>
         
-          <a href="#comment-tab2" class="mdui-ripple">livere</a>
-        
       </div>
       
         <div id="comment-tab0" class="mdui-p-a-2">
@@ -367,31 +362,15 @@
     el: '#vcomments',
     notify: notify,
     verify: verify,
-    appId: '',
-    appKey: '',
-    placeholder: '',
+    appId: 'bwUGIbYTslTcrrX0KplCl1XL-gzGzoHsz',
+    appKey: 'KGrthL69RAzo7mDT4pfiHqoL',
+    placeholder: '请输入您的评论',
     pageSize: '',
     avatar: '',
     lang: '',
     guest_info: guest_info
   });
 </script>
-        </div>
-      
-        <div id="comment-tab2" class="mdui-p-a-2">
-          <div id="lv-container" data-id="city" data-uid="">
-  <script type="text/javascript">
-    (function (d, s) {
-      var j, e = d.getElementsByTagName(s)[0];
-      if (typeof LivereTower === 'function') { return; }
-      j = d.createElement(s);
-      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-      j.async = true;
-      e.parentNode.insertBefore(j, e);
-    })(document, 'script');
-  </script>
-  <noscript>Please enable JavaScript to view the comments powered by LiveRe.</noscript>
-</div>
         </div>
       
     </div>
