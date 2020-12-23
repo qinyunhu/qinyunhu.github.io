@@ -126,22 +126,6 @@
                     <div class="mdui-list-item-content">归档</div>
                 </a>
             
-                
-                <a href="/tools/" class="mdui-list-item mdui-ripple">
-                    <div class="mdui-list-item-icon">
-                        <i class="iconfont icon-tools"></i>
-                    </div>
-                    <div class="mdui-list-item-content">工具箱</div>
-                </a>
-            
-                
-                <a href="/about/" class="mdui-list-item mdui-ripple">
-                    <div class="mdui-list-item-icon">
-                        <i class="iconfont icon-user"></i>
-                    </div>
-                    <div class="mdui-list-item-content">关于</div>
-                </a>
-            
             <div class="mdui-list-item mdui-ripple">
                 <div class="mdui-list-item-icon">
                     <i class="iconfont icon-moon"></i>
@@ -352,7 +336,9 @@
         
           <a href="#comment-tab0" class="mdui-ripple">gitalk</a>
         
-          <a href="#comment-tab1" class="mdui-ripple">livere</a>
+          <a href="#comment-tab1" class="mdui-ripple">valine</a>
+        
+          <a href="#comment-tab2" class="mdui-ripple">livere</a>
         
       </div>
       
@@ -363,11 +349,11 @@
 <script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
 <script>
   var gitalk = new Gitalk({
-    clientID: '',
-    clientSecret: '',
-    repo: '',
-    owner: '',
-    admin: [''],
+    clientID: 'fcd842392fae3cd7105d',
+    clientSecret: '67cc0bb069a5e6b9bc35af080eca60c7720a2ba6',
+    repo: 'hexo-blog-comment',
+    owner: 'qinyunhu',
+    admin: ['qinyunhu'],
     id:  md5(location.pathname) ,
     distractionFreeMode: 'true',
   });
@@ -376,6 +362,33 @@
         </div>
       
         <div id="comment-tab1" class="mdui-p-a-2">
+          <div id="vcomments"></div>
+<script src="//cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  var GUEST_INFO = ['nick', 'mail', 'link'];
+  var guest_info = ''.split(',').filter(function (item) {
+    return GUEST_INFO.indexOf(item) > -1;
+  });
+  var notify = '' === 'true';
+  var verify = '' === 'true';
+  new Valine({
+    el: '#vcomments',
+    notify: notify,
+    verify: verify,
+    appId: '',
+    appKey: '',
+    placeholder: '',
+    pageSize: '',
+    avatar: '',
+    lang: '',
+    guest_info: guest_info
+  });
+</script>
+        </div>
+      
+        <div id="comment-tab2" class="mdui-p-a-2">
           <div id="lv-container" data-id="city" data-uid="">
   <script type="text/javascript">
     (function (d, s) {
